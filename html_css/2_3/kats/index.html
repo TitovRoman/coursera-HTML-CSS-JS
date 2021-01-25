@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Бабуленькины котятки</h1>
+    </header>
+    <main>
+        <input type="radio" name="selectBreed" class="radio__breed abyssinian" id="abyssinian">
+        <input type="radio" name="selectBreed" class="radio__breed british" id="british">
+        <input type="radio" name="selectBreed" class="radio__breed russian_blue" id="russian_blue">
+        <input type="radio" name="selectBreed" class="radio__breed siamese" id="siamese">
+        <nav class="nav__breed">
+            <label for="abyssinian">Абиссинская</label>
+            <label for="british">Британская</label>
+            <label for="russian_blue">Русская голубая</label>
+            <label for="siamese">Сиамская</label>
+        </nav>
+
+        <section class="cat__gallery">
+            <div class="cat__gallery_el" data-cat-info="Моша, 2 года"> 
+                <img src="./img/br2.jfif" alt="ab1" class="img__cat british">
+            </div>
+            <div class="cat__gallery_el" data-cat-info="Феликс, 3 года"> 
+                <img src="./img/ab1.jpg" alt="ab1" class="img__cat abyssinian">
+            </div>
+            <div class="cat__gallery_el" data-cat-info="Моша, 2 года"> 
+                <img src="./img/SIAM3.jpg" alt="siamese" class="img__cat siamese">
+            </div>
+            <div class="cat__gallery_el" data-cat-info="Моша, 2 года"> 
+                <img src="./img/SIAM2.jpg" alt="siamese" class="img__cat siamese">
+            </div>
+            <div class="cat__gallery_el" data-cat-info="Моша, 2 года"> 
+                <img src="./img/rus1.jpg" alt="russian_blue" class="img__cat russian_blue">
+            </div>
+            <div class="cat__gallery_el" data-cat-info="Феликс, 3 года"> 
+                <img src="./img/ab4.jpg" alt="ab1" class="img__cat abyssinian">
+            </div>
+            <div class="cat__gallery_el" data-cat-info="Моша, 2 года"> 
+                <img src="./img/rus4.jpg" alt="russian_blue" class="img__cat russian_blue">
+            </div>
+            <div class="cat__gallery_el" data-cat-info="Моша, 2 года"> 
+                <img src="./img/rus3.jpg" alt="russian_blue" class="img__cat russian_blue">
+            </div>
+            <div class="cat__gallery_el" data-cat-info="Моша, 2 года"> 
+                <img src="./img/SIAM1.jfif" alt="siamese" class="img__cat siamese">
+            </div>
+            <div class="cat__gallery_el" data-cat-info="Феликс, 3 года"> 
+                <img src="./img/ab2.jpg" alt="ab1" class="img__cat abyssinian">
+            </div>
+            <div class="cat__gallery_el" data-cat-info="Моша, 2 года"> 
+                <img src="./img/br2.jfif" alt="ab1" class="img__cat british">
+            </div>
+            <div class="cat__gallery_el" data-cat-info="Моша, 2 года"> 
+                <img src="./img/rus4.jpg" alt="russian_blue" class="img__cat russian_blue">
+            </div>
+            <div class="cat__gallery_el" data-cat-info="Моша, 2 года"> 
+                <img src="./img/SIAM3.jpg" alt="siamese" class="img__cat siamese">
+            </div>
+            <div class="cat__gallery_el" data-cat-info="Моша, 2 года"> 
+                <img src="./img/br3.jpg" alt="ab1" class="img__cat british">
+            </div>
+        </section>
+
+        <div class="rating__breed">
+            <h1>
+                Рейтинг
+            </h1>
+            <label for="filter__checkbox" class="filter">
+                по убыванию 
+            </label>
+            <input id="filter__checkbox" class="filter__checkbox" type="checkbox">
+            <div class="rating_flex_container">
+                <div data-score="9" class="rating__breed__flex">
+                    Абиссинская 
+                    <div class="rating"></div>
+                </div>
+                <div data-score="8" class="rating__breed__flex">
+                    Британская 
+                    <div class="rating"></div>
+                </div>
+                <div data-score="10" class="rating__breed__flex">
+                    Русская голубая 
+                    <div class="rating"></div>
+                </div>
+                <div data-score="4" class="rating__breed__flex">
+                    Сиамская 
+                    <div class="rating"></div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__left">&reg; ООО Бабуленькины котятки, 2015</div>
+        <address class="footer__addres">Наш адрес: Улица Котова, д.5</address>
+    </footer>
+</body>
+</html>

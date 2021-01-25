@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS-селекторы</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="../global.css">
+    </head>
+    <body>
+        <h1 class="global-heading">&nbsp;</h1>
+        <p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
+
+        <main class="global-results">
+            <section class="global-result">
+                <style>
+                    #id {
+                        background: #98ff66;
+                    }
+                    article.global-scope > aside,
+                    article.global-scope > div:first-child {
+                        background-color: #6698ff;
+                    }
+                    article.global-scope > div.c1 {
+                        background-color: #ff6698;
+                    }
+                </style>
+
+                <article class="global-scope">
+                    <div></div>
+                    <div class="c1"></div>
+                    <div id="id"></div>
+                    <aside></aside>
+                </article>
+            </section>
+
+            <section class="global-result">
+                <img class="global-goal">
+            </section>
+        </main>
+
+        <nav class="global-nav">
+            <a class="global-prev">Предыдущее</a>
+            <a class="global-next">Следующее</a>
+        </nav>
+
+        <script src="../global.js"></script>
+    </body>
+</html>

@@ -1,0 +1,277 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+
+/* Имя */
+.name a{
+    font-size: 117%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name a:hover{
+    color: red;
+}
+
+.category {
+    font-size: 80%;
+
+    text-decoration: underline;
+}
+
+/* Звезды */
+
+.stars {
+    font-size: 8px;
+    margin: 5px auto 7px;
+}
+
+.rating__group {
+    width: 10em;
+    height: 2em;
+    position: relative;
+    font-size: inherit;
+
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/off_star.png');
+    background-size: 2em ;
+    background-repeat: repeat-x;
+}
+
+.rating__star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2em;
+
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    
+    appearance: none;
+}
+
+.rating__star:hover ~ .rating__star{  
+    background-image: url('./images/off_star.png');
+    background-size: 2em;
+    background-repeat: repeat-x;
+}
+
+.rating__star:checked,
+.rating__star:hover {
+    background-image: url('./images/on_star.png');
+    background-size: 2em ;
+    background-repeat: repeat-x;
+}
+
+.rating__star:focus {  
+    outline: none;
+}
+
+
+.rating__star:nth-child(1) {
+    z-index: 10;
+    width: 1em;
+}
+.rating__star:nth-child(2) {
+    z-index: 9;
+    width: 2em;
+}
+.rating__star:nth-child(3) {
+    z-index: 8;
+    width: 3em;
+}
+.rating__star:nth-child(4) {
+    z-index: 7;
+    width: 4em;
+}
+.rating__star:nth-child(5) {
+    z-index: 6;
+    width: 5em;
+}
+.rating__star:nth-child(6) {
+    z-index: 5;
+    width: 6em;
+}
+.rating__star:nth-child(7) {
+    z-index: 4;
+    width: 7em;
+}
+.rating__star:nth-child(8) {
+    z-index: 3;
+    width: 8em;
+}
+.rating__star:nth-child(9) {
+    z-index: 2;
+    width: 9em;
+}
+.rating__star:nth-child(10) {
+    z-index: 1;
+    width: 10em;
+}
+
+/* Цена */
+
+.new_price {
+    color: brown;
+
+    font-size: 117%;
+    font-weight: bold;
+}
+.old_price {
+    font-size: 70%;
+    text-decoration: line-through;
+}
+
+/* Описание */
+
+.description {
+    margin-top: 10px;
+
+    font-size: 80%;
+    overflow: hidden;
+}
+
+.description p{
+    margin: 5px auto;
+}
+
+.description__cat > h1 {
+    margin: 5px auto;
+    font-size: 100%;
+
+}
+
+
+
+
+/* Переключатель */
+
+  
+  /* Hide default HTML checkbox */
+  
+  /* The slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    top: 10px
+  }
+  
+  /* Hide default HTML checkbox */
+  #list {display:none;}
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  #list:checked + .switch .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+  #list:not(:checked) ~ .cats {
+    margin: 75px;
+  }
+  #list:not(:checked) ~ .cats .cat {
+    display: inline-block;
+     vertical-align: bottom; 
+
+    width: 250px;
+    margin: 30px;
+
+    /* background-color: bisque; */
+}
+
+img {
+    width: 100%;  
+}
+
+#list:not(:checked) ~ .cats .description {
+    height: 350px;
+}
+
+#list:not(:checked) ~ .cats .cat_img {
+    margin-bottom: 20px;
+}
+
+#list:checked ~ .cats .cat {
+    display: block;
+    
+    margin: 70px auto;
+
+    width: 1000px;
+    /* background-color: bisque; */
+}
+
+
+
+/* Изображение */
+#list:checked ~ .cats .cat > div {
+    display: inline-block;
+    vertical-align: top;
+}
+#list:checked ~ .cats .cat .cat_img {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 25px;
+}
+#list:checked ~ .cats .cat .title {
+    box-sizing: border-box;
+    width: 44%;
+    padding: 25px;
+}
+#list:checked ~ .cats .cat .description {
+    box-sizing: border-box;
+    width: 30%;
+    padding: 25px;
+}
+
+.cat_img:hover {
+    opacity: 0.7;
+}
+
+/* img {
+    display: block;    
+    width: 100%;
+} */
